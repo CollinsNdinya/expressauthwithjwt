@@ -2,7 +2,7 @@ export const renderHTML = ( req, res, next) => {
     res.send("Hello World")
 }
 
-export const users = [
+const users = [
     {
         username: 'Collins',
         title: 'Post 1'
