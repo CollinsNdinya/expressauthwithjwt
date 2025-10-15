@@ -1,0 +1,25 @@
+{
+  "name": "expressauth",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --env-file=.env server.js",
+    "dev1": "node --watch --env-file=.env authServer.js",
+    "servers": "concurrently \"node server.js\" \"node authServer.js\"",
+    "start": "node server.js",
+    "start1": "node authServer.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
