@@ -7,9 +7,8 @@ import {getUser, renderHTML, } from '../controllers/userControllers.js'
 const route = express.Router()
 
 
-
+//routes
 route.get("/renderHTML", renderHTML)
-//route.get("users", users)
 route.get("/getUser", authenticateToken,  getUser)
 
 
